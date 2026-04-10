@@ -1,0 +1,47 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="utf-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <title>Calculator App</title>
+    <link rel="stylesheet" href="style.css">
+  </head>
+  <body>
+    <div class="wrapper">
+
+      <section class="calculator-screen">
+        <div class="expr" id="expr"></div>
+        <div class="display" id="display">0</div>
+      </section>
+
+      <section class="calculator-buttons">
+        <button class="btn btn-func" data-action="clear">C</button>
+        <button class="btn btn-func" data-action="backspace">&#8592;</button>
+        <button class="btn btn-func" data-action="noop"></button>
+        <button class="btn btn-op"   data-action="op" data-op="÷">&#247;</button>
+
+        <button class="btn" data-action="digit" data-val="7">7</button>
+        <button class="btn" data-action="digit" data-val="8">8</button>
+        <button class="btn" data-action="digit" data-val="9">9</button>
+        <button class="btn btn-op"   data-action="op" data-op="×">&#215;</button>
+
+        <button class="btn" data-action="digit" data-val="4">4</button>
+        <button class="btn" data-action="digit" data-val="5">5</button>
+        <button class="btn" data-action="digit" data-val="6">6</button>
+        <button class="btn btn-op"   data-action="op" data-op="−">&#8722;</button>
+
+        <button class="btn" data-action="digit" data-val="1">1</button>
+        <button class="btn" data-action="digit" data-val="2">2</button>
+        <button class="btn" data-action="digit" data-val="3">3</button>
+        <button class="btn btn-op"   data-action="op" data-op="+">+</button>
+
+        <button class="btn btn-zero" data-action="digit" data-val="0">0</button>
+        <button class="btn" data-action="decimal">.</button>
+        <button class="btn btn-op"   data-action="equals">=</button>
+      </section>
+
+    </div>
+    <script src="script.js"></script>
+  </body>
+</html>
